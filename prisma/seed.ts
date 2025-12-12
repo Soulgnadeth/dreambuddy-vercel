@@ -1,5 +1,5 @@
-import { PrismaClient } from './generated/client'
-//import { PrismaClient } from './../src/generated/client'
+// import { PrismaClient } from './generated/client'
+import { PrismaClient } from '@prisma/client'
 import { randomUUID } from 'crypto'
 
 const prisma = new PrismaClient()
