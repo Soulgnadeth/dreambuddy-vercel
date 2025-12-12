@@ -64,7 +64,7 @@ async function main() {
   // 3) สร้าง Transactions ตัวอย่าง
   // -------------------------------
   await Promise.all(
-    goals.map((goal) =>
+    goals.map((goal: { id: any; ownerId: any }) =>
       prisma.transaction.create({
         data: {
           amount: 500,
@@ -116,7 +116,7 @@ async function main() {
   ]
 
   await Promise.all(
-    goals.map((goal, i) =>
+    goals.map((goal: { id: any }, i: number) =>
       prisma.goalComment.create({
         data: {
           goalId: goal.id,
