@@ -1,7 +1,7 @@
 // schema.prisma สำหรับ DreamBuddy
 generator client {
   provider = "prisma-client"
-  output   = "../app/generated/prisma"
+  // output   = "../app/generated/prisma"
 }
 
 datasource db {
